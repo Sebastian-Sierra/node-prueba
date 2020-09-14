@@ -1,0 +1,65 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CUSTOM CSS ==================================== */
+.content{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#fecha_hora{
+    background-color: #333;
+    font-size: 7rem;
+    /* font-size: calc(40px + 20vmin); */
+    font-weight: bold;
+    text-align: center;
+}
+@media(max-width:768px){
+    #fecha_hora{
+        font-size: 5rem;
+    }
+}
+@media(max-width:576px){
+    #fecha_hora{
+        font-size: 3rem;
+    }
+}
+#contenido{
+    background-color: grey;
+    color: white;
+    font-size: 3rem;
+}
+
+/* TABLE */
+.tabla{
+    border: 1px solid #000;
+    border-spacing: 0px;
+}
+.tabla td{
+    border: 1px solid #000;
+}
+
+/* CARD */
+.card{
+    background-color: #EEE;
+    color: #000;
+    border-radius: 5px;
+}
+.card-head{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid #111;
+    background-color: #DDD;
+    padding: 5px;
+}
+.card-body{
+    display: block;
+    margin: 15px;
+}
