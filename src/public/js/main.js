@@ -40,7 +40,8 @@ async function pedirFecha() {
     ];
     const d = new Date();
 
-    document.getElementById("fecha_hora").style = (d.getMinutes() == 0) ? "color: red":"color: white";
+    var style = (d.getMinutes() == 0 && (d.getSeconds() % 2) == 0) ? "color: red":"color: white";
+    document.getElementById("fecha_hora").style = style;
     if(d.getMinutes()==0 && d.getSeconds()==0){
         console.log("En punto");
     }
