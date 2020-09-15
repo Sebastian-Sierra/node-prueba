@@ -12,4 +12,8 @@ router.get('/', function (req, res) {
     res.render('inicio.html', {publicaciones, req});
 });
 
+router.get('/minecraft', (req, res) => {
+    res.send("<h1>Minecraft</h1>");
+});
+
 module.exports = router;

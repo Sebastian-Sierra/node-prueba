@@ -9,7 +9,7 @@ app.engine('html',require('ejs').renderFile);
 app.set('view engine','ejs');
 
 // ROUTES
-app.use(require('./routes'));
+app.use("/", require('./routes'));
 
 // STATIC FILES
 app.use(express.static(path.join(__dirname,'public')));
