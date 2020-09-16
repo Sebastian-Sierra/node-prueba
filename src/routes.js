@@ -9,7 +9,7 @@ router.get('/', function (req, res) {
         {id:4,usuario:"user4",contenido:"contenido"},
         {id:5,usuario:"user5",contenido:"contenido"},
     ];
-    res.render('inicio.html', {publicaciones, req});
+    res.render('index.html', {publicaciones, req});
 });
 
 router.get('/minecraft', (req, res) => {
